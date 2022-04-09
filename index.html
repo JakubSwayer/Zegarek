@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Zegarek Analogowy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e4d41be2b6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-
-
-
 </head>
-
 <body onload="Clock()">
-
-<div class="whole">
-  <div class="clock">
-
-    <div class="hour">
-      <div class="hour-tip">
-
+  <div id="main_div" class="whole-night">
+    <div class="btnp">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Night Mode</label>
       </div>
     </div>
-    <div class="minute">
-      <div class="minute-tip">
-
+    <div id="id_clock" class="clock-night">
+      <div class="hour">
+        <div id="id_hour-tip" class="hour-night">
+        </div>
       </div>
-    </div>
-    <div class="second">
-      <div class="second-tip">
-
+      <div  class="minute">
+        <div id="id_minute-tip" class="minute-night">
+        </div>
       </div>
-    </div>
-    <div class="dot">
-
+      <div class="second">
+        <div id="id_second-tip" class="second-night">
+        </div>
+      </div>
+      <div class="dot">
+      </div>
     </div>
   </div>
-
-</div>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="script.js" charset="utf-8"></script>
 </body>
-
 </html>
